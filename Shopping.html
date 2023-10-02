@@ -3,10 +3,45 @@
 <head>
 <title>Shopping</title>  
 <meta charset="utf-8">
+<link rel="test relative link" href="testrellink.html">
+<style>
+    body {
+        background-color: #165
+    }
+    h1 {
+        font-family:cursive;
+        font-size: 50px;
+        margin-left: 5px;
+        margin-top: 1px;
+        text-decoration: underline;
+    }
+    #fruit {
+        color:red;
+        margin-left: 10px
+    }
+    #grains {
+        color:lightsalmon;
+        margin-left: 10px
+    }
+    #vegetables {
+        color:green;
+    }
+    #dairy {
+        color: greenyellow;
+        margin-left: 10px 
+    }
+    ul {
+        color: orange;
+        font-weight:bold;
+    }
+    #candy {
+        color:#961;
+    }
+</style>
 </head>
 <body>
-<h1>Shopping List</h1>
-<h2>Fruit</h2>
+<h1 style="color:white;">Shopping List</h1>
+<h2 id="fruit">Fruit</h2>
 <ul>
     <li>Apples</li> <a href="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg"><img src="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg" width="100" alt="apple"></a>
     <li>Bananas</li> <a href="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg"><img src="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg" width="100" alt="banana"></a> 
@@ -15,7 +50,7 @@
     <li>Mangoes</li> <a href="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ="><img src="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ=" width="100" alt="mangoes"></a>
 </ul>
 
-<h2>Grains</h2>
+<h2 id="grains">Grains</h2>
 <ul>
     <li><a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg">Bread</a></li> <a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg"><img src="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg" width="100" alt="bread"></a>
     <li><a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg">Pasta</a></li> <a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg"><img src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg" width="100" alt="Pasta"></a>
@@ -24,7 +59,7 @@
     <li>Rice</li> <a href="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg"><img src="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg" width="100" alt="Rice"></a>
     </ul>
 
-    <h2>Vegetables</h2>
+    <h2 id="vegetables">Vegetables</h2>
     <ul>
         <li>Lettuce</li> <a href="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg"><img src="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg" width="100" alt="Lettuce"></a>
         <li>Onions</li> <a href="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY="><img src="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY=" width="100" alt="Onions"></a>
@@ -32,15 +67,16 @@
         <li>Corn</li> <a href="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg"><img src="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg" width="100" alt="Corn"></a>
         <li>Broccoli</li> <a href="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background-572617423.jpg"><img src="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background-572617423.jpg" width="100" alt="Broccoli"></a>
     </ul>
-<h2>Dairy</h2>
+<h2 id="dairy">Dairy</h2>
 <ul>
     <li>Milk</li> <a href="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" width="100" alt="Milk"></a>
     <li>Cheese</li> <a href="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk="><img src="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk=" width="100" alt="Cheese"></a>
-    <li>Egg</li> <a href="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg" width="100" alt="egg">
-    <li>Yogurt</li> <a href="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg"><img src="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg" width="100" alt="yogurt">
-    <li>Butter</li> <a href="https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg"><img src="https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg" "width="100" alt="butter">
+    <li>Egg</li> <a href="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg" width="100" alt="egg"></a>
+    <li>Yogurt</li> <a href="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg"><img src="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg" width="100" alt="yogurt"></a>
+    <li>Butter</li> <a href="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/benefits-of-butter-1296x728-feature.jpg?w=1155&h=1528"><img src="https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg" width="100" alt="butter"></a> 
     </ul>
-<h2>Candy</h2>
+    
+<h2 id="candy">Candy</h2>
 <ul>
     <li>Snickers</li> <a href="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png"><img src="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png" width="100" alt="snickers"></a>
     <li>Jolly Ranchers</li> <a href="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg"><img src="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg" width="100" alt="jolly ranchers"></a>

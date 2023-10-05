@@ -6,7 +6,9 @@
 <link rel="test relative link" href="testrellink.html">
 <style>
     body {
-        background-color: #165
+        background-color: white;
+        margin-left: 3px
+        
     }
     h1 {
         font-family:cursive;
@@ -14,6 +16,7 @@
         margin-left: 5px;
         margin-top: 1px;
         text-decoration: underline;
+        
     }
     #fruit {
         color:red;
@@ -25,9 +28,10 @@
     }
     #vegetables {
         color:green;
+        margin-left:10px;
     }
     #dairy {
-        color: greenyellow;
+        color: yellow;
         margin-left: 10px 
     }
     ul {
@@ -36,55 +40,95 @@
     }
     #candy {
         color:#961;
+        margin-left:10px;
+    }
+    #photo {
+        border: 5px solid red
+    }
+    .div1 {
+        background-color: #d0e1f5;
+        border: 5px solid black;
+    }
+    .checkbox {
+        position:absolute;
+        left: 400px;
+        background-color:white;
     }
 </style>
 </head>
 <body>
-<h1 style="color:white;">Shopping List</h1>
-<h2 id="fruit">Fruit</h2>
+<h1 style="color:black;">Shopping List</h1>
+<div class="div1">
+    <h2 id="fruit">Fruit</h2>
 <ul>
-    <li>Apples</li> <a href="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg"><img src="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg" width="100" alt="apple"></a>
-    <li>Bananas</li> <a href="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg"><img src="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg" width="100" alt="banana"></a> 
-    <li>Watermelons</li> <a href="https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg"><img src="https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg" width="100" alt="watermelon"> </a>
-    <li>Blueberries</li> <a href="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="100" alt="blueberries"> </a>
-    <li>Mangoes</li> <a href="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ="><img src="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ=" width="100" alt="mangoes"></a>
+    <li>Apples</li> <a href="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg"><img src="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg" id="photo" width="100" alt="apple"></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox2" width="90" alt="checkbox">
+    <li>Bananas</li> <a href="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg"><img src="https://thumbs.dreamstime.com/b/banana-bunch-19074568.jpg" id="photo" width="100" alt="banana"></a> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox2" width="90" alt="checkbox">
+    <li>Watermelons</li> <a href="https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg"><img src="https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg" id="photo" width="100" alt="watermelon"> </a>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox3" width="90" alt="checkbox">
+    <li>Blueberries</li> <a href="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" id="photo" width="100" alt="blueberries"> </a>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox4" width="90" alt="checkbox">
+    <li>Mangoes</li> <a href="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ="><img src="https://media.istockphoto.com/id/168370138/photo/mango.jpg?s=612x612&w=0&k=20&c=ENq2BrUV8dNH2rth_ZYBBtS9RWDwCbI25SfulxirmnQ=" id="photo" width="100" alt="mangoes"></a>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox5" width="90" alt="checkbox">
 </ul>
 
 <h2 id="grains">Grains</h2>
 <ul>
-    <li><a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg">Bread</a></li> <a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg"><img src="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg" width="100" alt="bread"></a>
-    <li><a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg">Pasta</a></li> <a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg"><img src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg" width="100" alt="Pasta"></a>
-    <li>Cereals</li> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRd2wfX8gcRf-4t9j-DpOne_LKlmy-_M9oyiQQq8hRmA&s"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRd2wfX8gcRf-4t9j-DpOne_LKlmy-_M9oyiQQq8hRmA&s" width="100" alt="Cereal"></a>
-    <li>Tortillas</li> <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/1200px-Mexican_tortilla.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/1200px-Mexican_tortilla.jpg" width="100" alt="Tortilla"></a>
-    <li>Rice</li> <a href="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg"><img src="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg" width="100" alt="Rice"></a>
+    <li><a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg">Bread</a></li> <a href="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg"><img src="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg" id="photo" width="100" alt="bread"></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox6" width="90" alt="checkbox">
+    <li><a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg">Pasta</a></li> <a href="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg"><img src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl.jpg" id="photo" width="100" alt="Pasta"></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox7" width="90" alt="checkbox">
+    <li>Cereals</li> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRd2wfX8gcRf-4t9j-DpOne_LKlmy-_M9oyiQQq8hRmA&s"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRd2wfX8gcRf-4t9j-DpOne_LKlmy-_M9oyiQQq8hRmA&s" id="photo" width="100" alt="Cereal"></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox8" width="90" alt="checkbox">
+    <li>Tortillas</li> <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/1200px-Mexican_tortilla.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/1200px-Mexican_tortilla.jpg" id="photo" width="100" alt="Tortilla"></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox"id="checkbox9" width="90" alt="checkbox">
+    <li>Rice</li> <a href="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg"><img src="https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg" id="photo" width="100" alt="Rice"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
     </ul>
 
     <h2 id="vegetables">Vegetables</h2>
     <ul>
-        <li>Lettuce</li> <a href="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg"><img src="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg" width="100" alt="Lettuce"></a>
-        <li>Onions</li> <a href="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY="><img src="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY=" width="100" alt="Onions"></a>
-        <li>Spinach</li> <a href="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" width="100" alt="Lettuce"></a>
-        <li>Corn</li> <a href="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg"><img src="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg" width="100" alt="Corn"></a>
-        <li>Broccoli</li> <a href="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background-572617423.jpg"><img src="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background-572617423.jpg" width="100" alt="Broccoli"></a>
+        <li>Lettuce</li> <a href="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg"><img src="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg" id="photo" width="100" alt="Lettuce"></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+        <li>Onions</li> <a href="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY="><img src="https://media.istockphoto.com/id/499146870/photo/red-onions.jpg?s=612x612&w=0&k=20&c=OaZUynAtxIJyPaSgAsAGWwAbpTs_EfKF5zT_UvBDpbY=" id="photo" width="100" alt="Onions"></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+        <li>Spinach</li> <a href="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" id="photo" width="100" alt="Lettuce"></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+        <li>Corn</li> <a href="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg"><img src="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg" id="photo" width="100" alt="Corn"></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+        <li>Broccoli</li> <a href="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background- 572617423.jpg"><img src="https://www.shutterstock.com/shutterstock/photos/572617423/display_1500/stock-photo-broccoli-isolated-on-white-background-572617423.jpg" id="photo" width="100" alt="Broccoli"></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
     </ul>
 <h2 id="dairy">Dairy</h2>
 <ul>
-    <li>Milk</li> <a href="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" width="100" alt="Milk"></a>
-    <li>Cheese</li> <a href="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk="><img src="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk=" width="100" alt="Cheese"></a>
-    <li>Egg</li> <a href="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg" width="100" alt="egg"></a>
-    <li>Yogurt</li> <a href="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg"><img src="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg" width="100" alt="yogurt"></a>
-    <li>Butter</li> <a href="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/benefits-of-butter-1296x728-feature.jpg?w=1155&h=1528"><img src="https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg" width="100" alt="butter"></a> 
+    <li>Milk</li> <a href="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" id="photo" width="100" alt="Milk"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Cheese</li> <a href="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk="><img src="https://media.istockphoto.com/id/1127471287/photo/cheese-on-white.jpg?s=612x612&w=0&k=20&c=m8kJAfayGrBoqKceiwGAq7SaEDrbZCyPzklYOm3_MBk=" id="photo" width="100" alt="Cheese"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Egg</li> <a href="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Instagram_egg.jpg/220px-Instagram_egg.jpg" id="photo" width="100" alt="egg"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Yogurt</li> <a href="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg"><img src="https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt.jpg" id="photo" width="100" alt="yogurt"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Butter</li> <a href="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/benefits-of-butter-1296x728-feature.jpg?w=1155&h=1528"><img src="https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg" id="photo" width="100" alt="butter"></a> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
     </ul>
     
 <h2 id="candy">Candy</h2>
 <ul>
-    <li>Snickers</li> <a href="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png"><img src="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png" width="100" alt="snickers"></a>
-    <li>Jolly Ranchers</li> <a href="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg"><img src="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg" width="100" alt="jolly ranchers"></a>
-    <li>Skittles</li> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHOX3ISSkJFZoMT6gTLtQIqUXlRP1jM8ogg&usqp=CAU"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHOX3ISSkJFZoMT6gTLtQIqUXlRP1jM8ogg&usqp=CAU" width="100" alt="skittles"></a>
-    <li>Kit Kats</li> <a href="https://images.heb.com/is/image/HEBGrocery/000112564-1"><img src="https://images.heb.com/is/image/HEBGrocery/000112564-1" width="100" alt="kit kats"></a>
-    <li>Smarties</li> <a href="https://nikkispopcorn.com/cdn/shop/files/Smarties_1024x.webp?v=1688088530"><img src="https://nikkispopcorn.com/cdn/shop/files/Smarties_1024x.webp?v=1688088530" width="100" alt="smarties"></a>
+    <li>Snickers</li> <a href="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png"><img src="https://www.snickers.com/sites/g/files/fnmzdf616/files/migrate-product-files/dryeqrv2efldaaoyceat.png" id="photo" width="100" alt="snickers"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Jolly Ranchers</li> <a href="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg"><img src="https://target.scene7.com/is/image/Target/GUEST_377953bf-7b0e-46d7-853a-30071d70cdc7?wid=488&hei=488&fmt=pjpeg" id="photo" width="100" alt="jolly ranchers"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Skittles</li> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHOX3ISSkJFZoMT6gTLtQIqUXlRP1jM8ogg&usqp=CAU"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHOX3ISSkJFZoMT6gTLtQIqUXlRP1jM8ogg&usqp=CAU" id="photo" width="100" alt="skittles"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Kit Kats</li> <a href="https://images.heb.com/is/image/HEBGrocery/000112564-1"><img src="https://images.heb.com/is/image/HEBGrocery/000112564-1" id="photo" width="100" alt="kit kats"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
+    <li>Smarties</li> <a href="https://nikkispopcorn.com/cdn/shop/files/Smarties_1024x.webp?v=1688088530"><img src="https://nikkispopcorn.com/cdn/shop/files/Smarties_1024x.webp?v=1688088530" id="photo" width="100" alt="smarties"></a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png?20210311042606" class="checkbox" width="90" alt="checkbox">
 
     </ul>
+    </div>
 </body>
 
 

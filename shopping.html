@@ -17,11 +17,40 @@
                 margin: auto;
             }
             div.gallery {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
                 margin: 15px;
             }
             div.place {
                 font-size: 20px;
             }
+            .box {
+                flex-basis: 20%;
+                width: 100%;
+                padding: 10px;
+                margin: 8px;
+                box-shadow: 2px 2px 2px 2px blue;
+            }
+            .text {
+                text-align: center;
+                margin-top: 8px
+            }
+            .image:hover{
+                border: 3px solid blue;
+            }
+             @media only screen and (max-width: 300px) {
+            .box {
+                flex-basis: 100%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .box {
+                flex-basis: 40%;
+            }
+            }
+           
+            
         </style>
     </head>
     <body>
@@ -35,15 +64,16 @@
                 <div class="image">
                     <a
                         target="_blank"
-                        href="https://cdn.britannica.com/62/153462-050-3D4F41AF/Grand-Canal-Venice.jpg"
+                        href="https://c.pxhere.com/images/c8/e7/f3ee51f9f45ebc765064809dfd38-1634350.jpg!d"
                         ><img
-                            src="https://cdn.britannica.com/62/153462-050-3D4F41AF/Grand-Canal-Venice.jpg"
-                            width="250"
+                            src="https://c.pxhere.com/images/c8/e7/f3ee51f9f45ebc765064809dfd38-1634350.jpg!d"
+                            width="300"
                             alt="venice"
                     /></a>
                 </div>
-                <div class="text">Venice is a popular tourist destination.</div>
+                <div class="text">Venice, Italy is a popular tourist destination.</div>
             </div>
+            <p id="desc">Venice is one </p>
         </div>
         <div class="gallery">
             <div class="box">
@@ -51,33 +81,34 @@
                 <div class="image">
                     <a
                         target="_blank"
-                        href="https://media.timeout.com/images/105482246/1920/1080/image.jpg"
+                        href="https://live.staticflickr.com/6198/6054862618_805ac4da47_b.jpg"
                         ><img
-                            src="https://media.timeout.com/images/105482246/1920/1080/image.jpg"
-                            width="250"
-                            alt="venice"
+                            src="https://live.staticflickr.com/6198/6054862618_805ac4da47_b.jpg"
+                            width="300"
+                            alt="rio de janerio"
                     /></a>
                 </div>
-                <div class="text">Rio de Janeiro is a popular tourist destination</div>
+                <div class="text">
+                    Rio de Janeiro, Brazil is a popular tourist destination
+                </div>
             </div>
         </div>
 
         <div class="gallery">
             <div class="box">
-                <div class="place"><h2>Venice, Italy</h2></div>
+                <div class="place"><h2>Kyoto, Japan</h2></div>
                 <div class="image">
                     <a
                         target="_blank"
-                        href="https://cdn.britannica.com/62/153462-050-3D4F41AF/Grand-Canal-Venice.jpg"
+                        href="https://live.staticflickr.com/8065/8152262561_94e4a92ed3_b.jpg"
                         ><img
-                            src="https://cdn.britannica.com/62/153462-050-3D4F41AF/Grand-Canal-Venice.jpg"
-                            width="250"
-                            alt="venice"
+                            src="https://live.staticflickr.com/8065/8152262561_94e4a92ed3_b.jpg"
+                            width="300"
+                            alt="kyoto"
                     /></a>
                 </div>
-                <div class="text">Venice is a popular tourist destination.</div>
+                <div class="text">Kyoto, Japan is a popular tourist destination.</div>
             </div>
         </div>
-        https://www.google.com/search?q=venice%20italy&tbm=isch&tbs=il:cl&rlz=1CAXXPU_enUS992&hl=en&sa=X&ved=0CAAQ1vwEahcKEwjIl8mUpf2BAxUAAAAAHQAAAAAQAg&biw=1517&bih=696&safe=active&ssui=on#imgrc=gBKuy4OJUgH-UM
     </body>
 </html>

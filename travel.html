@@ -4,71 +4,155 @@
         <meta charset="UTF-8" />
         <title>Travel Website</title>
         <style>
-            #header{
-           background-color: #165;
+            .headbox {
+                padding: 1px;
+                width: 100%;
+                background-color: #165;
+            }
+            #header {
+                background-color: #165;
                 color: white;
                 font-size: 25px;
-                margin: 10px;
+                margin-left: 10px;
+                margin-top: 0px;
+                text-align: center;
             }
             body {
                 width: 100%;
                 margin: auto;
-
-            }  
-            div.gallery {
-                width: 100%;
+                background-color: beige;
+            }
+            div.gallery,
+            .descript,
+            .descript1,
+            .descript2 {
+                width: 3000px;
                 display: flex;
                 flex-flow: row wrap;
                 margin-top: 20px;
                 margin-left: 10px;
                 float: left;
+            }
+            .gallery {
                 align-items: center;
-                justify-content: center
+                justify-content: left;
+                float: right;
+            }
+
+            .descript {
+                color: #5329a9;
+                font-size: 17px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 680px;
+            }
+            .descript1 {
+                color: #5329a9;
+                font-size: 17px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 470px;
+                margin-left: 680px;
+            }
+            .descript2 {
+                color: #5329a9;
+                font-size: 17px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 850px;
+                margin-left: 680px;
             }
             div.place {
                 font-size: 20px;
+                color: #5329a9;
             }
-            .box {
+            .box,
+            .box1 {
                 flex-basis: 20%;
                 width: 100%;
-                padding: 10px;
+                padding: 15px;
                 margin: 8px;
                 box-shadow: 2px 2px 2px 2px blue;
+                background-color: yellow;
+            }
+            .box1 {
+                box-shadow: 2px 2px 2px 2px red;
             }
             .text {
                 text-align: center;
-                margin-top: 8px
+                margin-top: 8px;
+                color: #5329a9;
             }
-            .image:hover{
+            .image {
+                text-align: center;
+            }
+            .image:hover {
                 border: 3px solid blue;
             }
-             @media only screen and (max-width: 300px) {
-            .box {
-                flex-basis: 100%;
+            @media only screen and (max-width: 300px) {
+                .box {
+                    flex-basis: 100%;
+                }
             }
-        }
-        @media only screen and (max-width:500px) {
-            .box {
-                flex-basis: 40%;
+            @media only screen and (max-width: 500px) {
+                .box {
+                    flex-basis: 40%;
+                }
             }
+            h3 {
+                text-decoration: underline;
             }
-            .desc {
-                
-                margin-left: 30%;
-                margin-top: 50px;
-                font-size: 15px;
-                text-align: left;
-                float: left;
+            .container {
+                position: relative;
+                margin-top: 30px;
+                padding: 5px;
+                width: 100%;
+                background-color: green;
             }
-           
-            
+            .Nav {
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                background-color: green;
+            }
+            #Fea {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #Dis {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #Comm {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #More {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
-        <div id="header">
-            <h1>Travel Website</h1>
+        <div class="headbox">
+            <div id="header">
+                <h1>Travel Website</h1>
+            </div>
         </div>
-
+        <div class="container">
+            <div class="Nav">
+                <span id="Fea">Featured Places</span>
+                <span id="Dis">Discover</span>
+                <span id="Comm">Community</span>
+                <span id="More">More</span>
+            </div>
+        </div>
         <div class="gallery">
             <div class="box">
                 <div class="place"><h2>Venice, Italy</h2></div>
@@ -78,13 +162,38 @@
                         href="https://c.pxhere.com/images/c8/e7/f3ee51f9f45ebc765064809dfd38-1634350.jpg!d"
                         ><img
                             src="https://c.pxhere.com/images/c8/e7/f3ee51f9f45ebc765064809dfd38-1634350.jpg!d"
-                            width="300"
+                            width="400"
                             alt="venice"
                     /></a>
                 </div>
-                <div class="text">Venice, Italy is a popular tourist destination.</div>
+                <div class="text">
+                    <em>A striking view of a canal in Venice, Italy.</em>
+                </div>
             </div>
-            <p class="desc">Venice is arguably one of the most picturesque tourist destinations in the world. It is famous for its beautiful canals, stunning architecture, and rich history. This city is a great place to explore and experience a unique and magical atmosphere. </p>
+        </div>
+        <div class="descript">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Venice is <em>arguably</em> one of the most picturesque
+                        tourist destinations in the world. It is famous for its
+                        <strong
+                            >beautiful canals, stunning architecture,</strong
+                        >
+                        and <strong>rich history</strong>. Combining all of this
+                        with its friendly and energetic culure, this city makes
+                        itself a great place to explore and experience a unique
+                        and magical atmosphere.<br />
+                        <h3>Places you can visit in Venice:</h3>
+                        <ul>
+                            <li>St. Mark's Square</li>
+                            <li>the Rialto Bridge</li>
+                            <li>Grand Canal</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         </div>
         <div class="gallery">
             <div class="box">
@@ -100,11 +209,37 @@
                     /></a>
                 </div>
                 <div class="text">
-                    Rio de Janeiro, Brazil is a popular tourist destination
+                    <em
+                        >A stunning view of the statue of Christ the Redeemer
+                        looking down at the city of Rio de Janeiro, Brazil.</em
+                    >
                 </div>
             </div>
         </div>
-
+        <div class="descript1">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Rio de Janerio is <em>definitely</em> a tourist
+                        destination with a lot to offer. The city is profoundly
+                        resonant in colors, sounds, and flavors. From the golden
+                        sands of the Copacabana and Ipanema beaches to the
+                        towering presence of the iconic Christ the Redeemer
+                        Statue, Rio de Janerio is a place where you can truly
+                        resonante with using all of your senses. This is the one
+                        place where you can take in the feeling that you are in
+                        another world altogether.
+                        <h3>Places you can visit in Rio de Janerio:</h3>
+                        <ul>
+                            <li>Copacabana Beach</li>
+                            <li>Ipanema Beach</li>
+                            <li>Christ the Redeemer Statue</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
         <div class="gallery">
             <div class="box">
                 <div class="place"><h2>Kyoto, Japan</h2></div>
@@ -118,7 +253,32 @@
                             alt="kyoto"
                     /></a>
                 </div>
-                <div class="text">Kyoto, Japan is a popular tourist destination.</div>
+                <div class="text">
+                    <em>A breathtaking view of a backalley in Kyoto, Japan.</em>
+                </div>
+            </div>
+        </div>
+        <div class="descript2">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Kyoto is the <em>epitome</em> of elegance and
+                        tranquility. With its stunning temples, traditional tea
+                        houses, and beautiful gardens, Kyoto offers a glimpse of
+                        Japan's rich culture and history. This is a place where
+                        ancient traditions delicately coexist with modern
+                        traditions and combine to create the version of Japanese
+                        culture that exists today. Its stunning atmosphere makes
+                        you feel as though you are in paradise.
+                        <h3>Places you can visit in Kyoto:</h3>
+                        <ul>
+                            <li>Fushimi Inari Taisha Shrine</li>
+                            <li>Arashiyama Bamboo Grove</li>
+                            <li>Eikan-dō Temple</li>
+                        </ul>
+                    </span>
+                </div>
             </div>
         </div>
     </body>

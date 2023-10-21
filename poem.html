@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Travel Website</title>
+        <style>
+            .header {
+                padding: 1px;
+                width: 100%;
+                background-color: deepskyblue;
+            }
+            #header {
+                background-color: deepskyblue;
+                color: white;
+                font-size: 25px;
+                margin-left: 10px;
+                margin-top: 0px;
+                text-align: center;
+            }
+            .container {
+                position: relative;
+                margin-top: 30px;
+                padding: 5px;
+                width: 100%;
+                background-color: lightskyblue;
+            }
+            .Navigation {
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                background-color: lightskyblue;
+            }
+            #Featured {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #Discover {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #More {
+                margin: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            body {
+                width: 100%;
+                margin: auto;
+                background-color: lightsalmon;
+            }
+            .gallery,
+            .description1,
+            .description2,
+            .description3 {
+                width: 3000px;
+                display: flex;
+                flex-flow: row wrap;
+                margin-top: 20px;
+                margin-left: 10px;
+                float: left;
+            }
+            .gallery {
+                align-items: center;
+                justify-content: left;
+                float: left;
+            }
+
+            .description1 {
+                color: indianred;
+                font-size: 17px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 680px;
+            }
+            .description2 {
+                color: indianred;
+                font-size: 15px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 470px;
+                margin-left: 680px;
+            }
+            .description3 {
+                color: indianred;
+                font-size: 17px;
+                justify-content: left;
+                position: absolute;
+                margin-top: 955px;
+                margin-left: 680px;
+            }
+            div.place {
+                font-size: 20px;
+                color: #5329a9;
+            }
+            .box,
+            .box1 {
+                flex-basis: 20%;
+                width: 100%;
+                padding: 15px;
+                margin: 8px;
+                box-shadow: 2px 2px 2px 2px blue;
+                background-color: greenyellow;
+            }
+            .box1 {
+                box-shadow: 2px 2px 2px 2px red;
+            }
+            .text {
+                text-align: center;
+                margin-top: 8px;
+                color: #5329a9;
+            }
+            .image {
+                text-align: center;
+            }
+            .image:hover {
+                border: 5px solid blue;
+            }
+            @media only screen and (max-width: 300px) {
+                .box {
+                    flex-basis: 100%;
+                }
+            }
+            @media only screen and (max-width: 500px) {
+                .box {
+                    flex-basis: 40%;
+                }
+            }
+            h3 {
+                text-decoration: underline;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div id="header">
+                <h1>Travel Website</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Navigation">
+                <span id="Featured">Featured Places</span>
+                <span id="Discover">Discover</span>
+                <span id="More">More</span>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <div class="place"><h2>Paris, France</h2></div>
+                <div class="image">
+                    <a
+                        target="_blank"
+                        href="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg"
+                        ><img
+                            src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg"
+                            width="400"
+                            alt="Paris"
+                    /></a>
+                </div>
+                <div class="text">
+                    <em>A view of the towering Effiel Tower in Paris, France.</em>
+                </div>
+            </div>
+        </div>
+        <div class="description1">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Paris is a vibrant place known for its romantic atmosphere, iconic landmarks, delicious cuisine, and rich history. Places such as the towering Effiel Tower, the Louvre Museum housing the iconic Mona Lisa painting, and the central Seine River exist in Paris for visitors to see. Combined with the delicious food, rich history, and romantic atmosphere, Paris captures visitors from all over the world to have this magical experience. 
+                        <h3>Things you can do in Paris:</h3>
+                        <ul>
+                            <li>Visit Effiel Tower, Louvre Museum, and Seine River</li>
+                            <li>Eat delicious food</li>
+                            <li>Take in the romantic atmosphere with your signifcant other</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <div class="place"><h2>Athens, Greece</h2></div>
+                <div class="image">
+                    <a
+                        target="_blank"
+                        href="https://pd.w.org/2023/06/7316491eb4de808d1.12590655.jpg"
+                        ><img
+                            src="https://pd.w.org/2023/06/7316491eb4de808d1.12590655.jpg"
+                            width="400"
+                            alt="Athens"
+                    /></a>
+                </div>
+                <div class="text">
+                    <em
+                        >A view of the Parthenon on top of the Acropolis of Athens</em
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="description2">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Athens is a fascinating city that harmoniously blends ancient history and modern tradition together. Perched on a hill, the Acropolis proudly shows the iconic Parthenon, a temple dedicated to Athena, the goddess of wisdom. As you explore the streets of Plaka, you will encounter charming cafes and vibrant art. Monastiraki Square is a valuable trove of flea markets, where you can buy soveneirs and other amazing artifacts. Speaking of artifacts, you can also visit the National Archaelogoical Museum, home to an impressive collection of ancient Greek artifacts. Athens is a great place to visit due to its beautiful combination of its ancient history and modern tradition, making it a destination you cannot miss. 
+                        <h3>Places you can visit in Athens:</h3>
+                        <ul>
+                            <li>Acropolis of Athens</li>
+                            <li>Plaka</li>
+                            <li>Monastriaki Square</li>
+                            <li>National Archcaelogical Museum</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <div class="place"><h2>Dubai, United Arab Emriates</h2></div>
+                <div class="image">
+                    <a
+                        target="_blank"
+                        href="https://www.occrp.org/images/stories/CCWatch/daily/Dubai_Azzure.jpg"
+                        ><img
+                            src="https://www.occrp.org/images/stories/CCWatch/daily/Dubai_Azzure.jpg"
+                            width="400"
+                            alt="Dubai"
+                    /></a>
+                </div>
+                <div class="text">
+                    <em>An aerial view of Dubai.</em>
+                </div>
+            </div>
+        </div>
+        <div class="description3">
+            <div class="box1">
+                <div class="desc">
+                    <span class="desc"
+                        ><h3>Description</h3>
+                        Dubai, UAE is a shining city that always impresses. Its skyline is decorated with futuristic skyscrapers such as the Burj Khalifa, the tallest building in the world currently. The Palm Jumeirah, an archipelago, offers luxurious resorts and stunning views of the Arabian Gulf. Dubai's desert safaris provide exicting adventures, from dune bashing to camel rides. With its blend of modern extravagance and Arabian charm, Dubai is a city that truly resonates with your senses. 
+                        <h3>Places you can visit in Dubai:</h3>
+                        <ul>
+                            <li>Burj Khalifa</li>
+                            <li>Palm Jumeirah</li>
+                            <li>Safaris</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
